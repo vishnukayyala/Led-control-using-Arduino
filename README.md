@@ -1,3 +1,5 @@
+NAME :  VISHNU K M 
+REG NO: 212223240185
 # Led-control-using-Arduino
 
 ## AIM
@@ -58,9 +60,40 @@ Emergency Signaling System </br>
 Weighing Machines </br>
 
 ## CIRCUIT DIAGRAM
+![image](https://github.com/user-attachments/assets/f696f20c-1a90-4793-a4b3-ae71cef4b6b6)
+
+
 
 ## PROGRAM
+```
+const int buttonPin = 2;     
+const int ledPin =  13;      
+int buttonState = 0;         
+void setup() {
+pinMode(ledPin, OUTPUT);
+pinMode(buttonPin, INPUT);
+}
+void loop() {
+  buttonState = digitalRead(buttonPin);
+  if (buttonState == HIGH)
+ {
+    digitalWrite(ledPin, HIGH);
+  } 
+else
+ {    digitalWrite(ledPin, LOW);
+  }}
+```
 
 ## OUTPUT
+## LED ON:
+
+![image](https://github.com/user-attachments/assets/0e02cc2d-a50e-4cca-ab74-2d913821e9bc)
+
+## LED OF:
+
+![image](https://github.com/user-attachments/assets/24625ed5-de2e-4fd7-a349-0dfe4b03c4a7)
+
+
 
 ## RESULT
+Thus the IO based LED control syestem  circuit is designed and implemented in proteus succesfully.
